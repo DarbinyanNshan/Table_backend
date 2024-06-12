@@ -1,0 +1,23 @@
+{
+  "name": "sm_backend",
+  "version": "1.0.0",
+  "description": "sm_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarbinyanNshan/Table_backend.git"
+  },
+  "author": "Nshan Darbinyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarbinyanNshan/Table_backend/issues"
+  },
+  "homepage": "https://github.com/DarbinyanNshan/Table_backend#readme",
+  "dependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
