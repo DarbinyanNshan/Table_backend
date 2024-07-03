@@ -22,7 +22,7 @@ const {
   PORT,
   DB
 } = require('./constants');
-const { ArmaturAdd, GetArmatur } = require('./controler/AutoControler');
+const { ArmaturAdd, GetArmatur, DeleteValues, EditeValues } = require('./controler/ArmaturControler');
 
 console.log(DB);
 mongoose
@@ -44,6 +44,12 @@ app.post('/armatur/add',
 )
 app.get('/armatur',
   GetArmatur,
+)
+app.put('/armatur/delet/:id',
+  DeleteValues
+)
+app.put('/armatur/edite/:id',
+  EditeValues
 )
 server.listen(PORT, () => {
   console.log(`App listening on port http://${HOST}:${PORT}`)
